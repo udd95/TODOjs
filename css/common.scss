@@ -56,10 +56,8 @@ $text-black:#121212;
 $text-white:#fff;
 $dark-bg:#333;
 $white-bg:#f3f3f3;
+
 /*common class*/
-.center-box {
-    text-align: center;
-}
 .col-box {
     display: flex;
     flex-direction: column;
@@ -145,4 +143,7 @@ input,input::placeholder {
 .input-contain {
     position: relative;
     margin: 2rem 0;
+}
+.blind {
+    display: none;
 }
