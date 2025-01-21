@@ -1,0 +1,32 @@
+.form-switch .form-check-input {
+  background-color: #faf5b3;
+  border-color: #ddd;
+  height: 20px;
+  width: 2.5rem;
+}
+
+.form-switch .form-check-input:focus {
+  border-color: #ddd;
+  outline: 0;
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba(0,0,0,0.25)'/></svg>");
+}
+
+.form-check-input:checked {
+  background-color: #828282;
+  border-color: #ddd;
+}
+
+.form-control:focus {
+  border: 1px solid rgba(138, 137, 137, 0.5058823529);
+  outline: 0;
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+}
+
+.form-control:focus ~ button {
+  background: #333;
+}
+
+.form-floating > .form-control {
+  padding: 1rem 2.2rem 1rem 0.75rem;
+}

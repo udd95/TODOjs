@@ -1,0 +1,140 @@
+/*web font*/
+@font-face {
+  font-family: "Cafe24Behappy";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2405-3@1.1/Cafe24Behappy.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SlowSlow";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/naverfont_10@1.0/SlowSlow.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "FT";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2404@1.0/Freesentation-4Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+/*reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: inherit;
+}
+
+body {
+  height: 100%;
+}
+body a {
+  display: block;
+  text-decoration: none;
+}
+body button {
+  background: none;
+  border: none;
+  font-family: "SlowSlow";
+  font-size: 1rem;
+  cursor: pointer;
+}
+body li {
+  list-style: none;
+}
+body h1 {
+  font-family: "Cafe24Behappy";
+}
+body h2, body h3, body h4 {
+  margin: 0;
+  padding: 0;
+  font-family: "Cafe24Behappy";
+}
+
+/*var*/
+/*common class*/
+.col, .login > div, .login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.row-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.add-btn {
+  width: 24px;
+  position: absolute;
+  right: 8px;
+  top: 18px;
+  background: #bebcbc;
+  border-radius: 50%;
+  color: #fff;
+  font-weight: 600;
+  transition: 0.35s;
+}
+
+input, input::placeholder {
+  font-family: "FT";
+  font-weight: 400;
+}
+
+/*mixin*/
+.login {
+  width: 100vw;
+  height: 100vh;
+  padding: 10vh 10vw;
+  background-image: linear-gradient(rgb(255, 255, 255), rgba(180, 180, 180, 0.39));
+}
+.login h1 {
+  font-size: 4rem;
+}
+.login img {
+  margin-bottom: 1rem;
+}
+.login > div {
+  width: 100%;
+  gap: 1rem;
+}
+.login > div button {
+  width: 100%;
+  line-height: 4vh;
+  padding-bottom: 4px;
+  background: #e1e1e1;
+  color: #343434;
+  font-size: 1rem;
+  border-radius: 4px;
+  transition: 0.35s;
+  line-height: 6vh;
+  min-height: 40px;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.login > div button:hover {
+  background: #121212;
+  color: #fff;
+}
+
+.main-wrap {
+  background: #f3f3f3;
+  max-width: 100vw;
+  height: 100vh;
+  padding: 5vh 10vw;
+  overflow: hidden;
+  color: #121212;
+  transition: 0.35s;
+  font-family: "FT";
+  font-weight: 400;
+}
+.main-wrap.dark {
+  background: #333;
+  color: #fff;
+}
+
+.input-contain {
+  position: relative;
+  margin: 2rem 0;
+}
