@@ -1,3 +1,4 @@
+/*var*/
 /*web font*/
 @font-face {
   font-family: "Cafe24Behappy";
@@ -50,10 +51,20 @@ body h2, body h3, body h4 {
   padding: 0;
   font-family: "Cafe24Behappy";
 }
+body p {
+  margin: 0;
+}
+body ol {
+  padding: 0;
+}
 
-/*var*/
 /*common class*/
-.col, .login > div, .login {
+.blind {
+  font-size: 0;
+  text-align: center;
+}
+
+.col-box, .login > div, .login {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -131,10 +142,47 @@ input, input::placeholder {
 }
 .main-wrap.dark {
   background: #333;
+  color: #696969;
+}
+.main-wrap.dark h2 {
   color: #fff;
 }
+.main-wrap.dark img {
+  transition: 0.35s;
+  filter: invert(1);
+}
 
-.input-contain {
+.add-input-contain {
   position: relative;
   margin: 2rem 0;
+}
+
+.todo-list ul,
+.finish-list ul {
+  height: 25vh;
+  padding: 5vw;
+  background: #fff;
+  border-radius: 4px;
+  overflow-y: auto;
+}
+.todo-list ul > li:first-child,
+.finish-list ul > li:first-child {
+  color: #aca9a9;
+  margin-bottom: 4px;
+}
+.todo-list ul ol li,
+.finish-list ul ol li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 6px;
+}
+.todo-list ul ol li p,
+.finish-list ul ol li p {
+  flex: 2;
+}
+.todo-list ul ol li button,
+.finish-list ul ol li button {
+  font-weight: 600;
 }

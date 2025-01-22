@@ -18,20 +18,31 @@
                 <label class="form-check-label" for="flexSwitchCheckChecked"></label>
             </div>
         </nav>
-        <div class="input-contain form-floating">
-            <input type="text" class="form-control" placeholder="text">
+        <form class="add-input-contain form-floating">
+            <input type="text" class="add-input form-control" placeholder="text">
             <label >Add To Do List</label>
             <button class="add-btn">+</button>
-          </div>
-        <article>
-            <h3 class="blind">해야할일</h3>
-            <img src="image/article.svg" alt="해야할일">
-            <div>
-            </div>
+        </form>
+        <article class="todo-list">
+            <h3 class="blind">해야할일<img src="image/article.svg" alt="해야할일"></h3>
+            <ul>
+                <li>오늘할일</li>
+                <li>
+                    <ol class="todo-item">
+                        
+                    </ol>
+                </li>
+            </ul>
         </article>
-        <article>
-            <h4>해놓은일</h4>
-            <img src="image/article2.svg" alt="해놓은일">
+        <article class="finish-list">
+            <h4 class="blind">해놓은일<img src="image/article2.svg" alt="해놓은일"></h4>
+            <ul>
+                <li>오늘한일</li>
+                <li>
+                    <ol class="finish-item">
+                    </ol>
+                </li>
+            </ul>
         </article>
     </main>
 </body>
